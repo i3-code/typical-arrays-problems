@@ -1,4 +1,3 @@
-
 exports.min = function min (array) {
   if (!array) return 0;
   let res = array.sort(function(a, b) { return a - b; });
@@ -7,8 +6,8 @@ exports.min = function min (array) {
 
 exports.max = function max (array) {
   if (!array) return 0;
-  let res = array.sort(function(a, b) { return a - b; });
-  return res.reverse()[0] || 0;
+  let res = array.sort(function(a, b) { return b - a; });
+  return res[0] || 0;
 }
 
 exports.avg = function avg (array) {
